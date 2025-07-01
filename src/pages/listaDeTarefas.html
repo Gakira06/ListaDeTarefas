@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!-- CSS EXTERNO -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- FRAMEWORK EXTERNO -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="cabecalho-logo">
+            <img src="../assets/logo.png" alt="logo" class="logo">
+            <h1>LISTA DE TAREFAS</h1>
+        </div>
+        <nav>
+            <ul class="cabecalho-nav">
+                <li><a href="#contato" class="link">Contatos</a></li>
+                <li><a href="#" class="link">Sobre Mim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <p>
+            <label for="task">Tarefa:</label>
+            <input type="text" id="task">
+        </p>
+        <button class="buttonAdicionar" id="adicionarTarefa" onclick="adicionarTarefa()">Adicionar Tarefa</button>
+        <!-- <button id="removerTarefa" onclick="removerTarefa()">Remover Tarefa</button> -->
+        <ul id="lista"></ul>
+    </main>
+    <footer class="rodape">
+        <h2 id="contato">Contatos</h2>
+        <div class="rede">
+            <img class="rodapeImg" src="../assets/tiktok.png">
+            <a class="redeNome" href="https://www.tiktok.com/@_akira_dev?is_from_webapp=1&sender_device=pc">_akira_dev</a>
+        </div>
+        <div class="rede">
+            <img class="rodapeImg" src="../assets/social.png">
+            <a class="redeNome" href="https://github.com/Gakira06">Portifolio</a>
+        </div>
+        <div class="rede">
+            <img class="rodapeImg" src="../assets/linkedin.png">
+            <a class="redeNome" href="www.linkedin.com/in/gabriel-akira-kiyohara-370493353">Linkedin</a>
+        </div>
+    </footer>
+        
+
+
+    <!-- JS EXTERNO -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
